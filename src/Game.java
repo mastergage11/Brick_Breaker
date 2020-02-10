@@ -14,6 +14,7 @@ public class Game extends JFrame implements KeyListener {
 
         board = new Board(this);
         add(board);
+        addKeyListener(this);
         pack();
 
         board.setup();
